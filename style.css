@@ -1,0 +1,85 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Pixelify Sans, sans-serif;
+}
+
+/* Effect
+- Khi click vào About, Contact,.. nó sẽ k lập tức chuyển tới trang đó, thay vào đó sẽ cuộn xuống 
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(3, 93, 93);
+}
+
+/* TRANSITION */
+
+/* 
+- Khi chuyển đổi giữa 2 trạng thái khi click, sẽ k diễn ra tức thời sẽ có 1 khoảng delay
+*/
+a, .btn {
+  transition: all 300ms ease
+}
+
+/* DESKTOP NAV */
+
+/*
+- Dùng để điều hướng liên kết, các liên kết tới các phần href sẽ nằm trong liên kết chính kiểu như gộp lại
+*/
+nav, .nav-link {
+  display: flex;
+}
+
+/*
+- Chỉnh giao diện, căn dòng
+*/
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+/*
+- Tạo khoảng trống và điều chỉnh kích cỡ của các tp nav-link
+*/
+.nav-link{
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+/*
+- Màu sắc 
+*/
+a {
+  color: rgba(0, 121, 117, 0.878);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+/*
+- Hiển thị khi đưa trỏ chuột vào 
+*/
+a:hover{
+  color: rgba(1, 62, 60, 0.878);
+  text-decoration: underline;
+  text-underline-offset: 0.75rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: rgba(0, 121, 117, 0.878);
+}
+
+.logo:hover{
+  cursor: default;
+}
